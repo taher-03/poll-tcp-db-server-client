@@ -1,6 +1,6 @@
 TARGET_SRV = bin/dbserver
 TARGET_CLI = bin/dbcli
-
+$(shell mkdir -p obj/srv obj/cli bin)
 SRC_SRV = $(wildcard src/srv/*.c)
 OBJ_SRV = $(SRC_SRV:src/srv/%.c=obj/srv/%.o)
 
